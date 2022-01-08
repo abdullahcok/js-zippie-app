@@ -1,2 +1,2 @@
 # js-zippie-app
-zipcode api with using bts4
+zipcode api with using api
