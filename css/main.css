@@ -1,72 +1,92 @@
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap");
-
-:root {
-  --mainPink: #ef7998;
-  --mainYellow: rgb(249, 228, 148);
-  --mainWhite: #fff;
-  --mainBlack: #1d1d1d;
-  --mainBlue: #3366ff;
-  --yellowTrans: rgba(249, 228, 148, 0.5);
-  --mainGrey: rgb(238, 238, 238);
-  --darkGrey: #2d2d2d;
-  --box-shadow: 0 2px 4px rgba(0,0,0, 1);
+* {
+  box-sizing: border-box;
 }
 
 body {
-  background: rgba(0,0,0, 0.1);
-  color: var(--darkGrey);
+  background: #434343;
+  color: #1d1d1d;
+  font-family: sans-serif;
 }
 
-.container{
-  margin: 40px auto;
+.container {
+  margin: 30px auto;
   width: 300px;
   height: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
-    background: rgba(50, 50, 50, 0.1);
-  border-radius: 10px;
-  box-shadow: var(--box-shadow);
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px black;
 }
 
-section{
+.container header {
   width: 300px;
-  background: rgba(50, 50, 50, 0.9);
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
+  background: #3366ff;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  padding: 5px 30px;
 }
 
-.title{
+.container header .co {
+  float: left;
+  font-size: 20px;
+  margin: 10px 0;
+  font-weight: bold;
+  color: #fff;
+}
+
+.container header .logo {
+  color: #fff;
+  width: 50px;
+  padding: 10px 40px;
+  float: right;
+  border-radius: 3px;
+}
+
+.container section {
+  width: 300px;
+  margin: 10px 0;
+  padding: 0 10px;
+  background: #fff;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.container section .title {
+  font-weight: bold;
   display: flex;
   justify-content: center;
-  margin: 50px 0;
-  color: var(--mainBlue);
-  padding: 5px 5px;
+  margin: 20px 0;
+  color: #fff;
+  padding: 5px;
   border-radius: 3px;
-  font-size: 25px;
+  font-size: 24px;
 }
 
-.icon-check, .icon-remove{
+.container section .icon-check, .container section .icon-remove {
   display: none;
 }
 
-.field{
+.container section .field {
+  background: #fff;
   margin: 20px 0;
   display: flex;
   text-align: center;
   justify-content: center;
 }
 
-.zip{
+.container section .zip {
   text-align: center;
   font-size: 14px;
-  width: 120px;
+  width: 70px;
   margin: 0 10px;
-  padding: 5px 5px;
+  padding: 5px;
 }
 
-p{
-  border: 1px solid var(--mainGrey);
+.container p {
+  border: 1px dotted #1d1d1d;
   font-size: 12px;
   margin-top: 10px;
   padding: 5px;

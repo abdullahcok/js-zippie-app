@@ -1,0 +1,98 @@
+@import 'colors';
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap");
+
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background: $grey;
+  color: $black;
+  font-family: sans-serif;
+}
+
+.container{
+  margin: 30px auto;
+  width: 300px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: $white;
+  border-radius: 5px;
+  box-shadow: $box-shadow;
+
+  header{
+    width: 300px;
+    background: $blue;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    padding: 5px 30px;
+
+    .co{
+      float: left;
+      font-size: 20px;
+      margin: 10px 0;
+      font-weight: bold;
+      color: $white;
+    }
+
+    .logo{
+      color: $white;
+      width: 50px;
+      padding: 10px 40px;
+      float: right;
+      border-radius: 3px;
+    }
+  }
+
+  section{
+    width: 300px;
+    margin: 10px 0;
+    padding: 0 10px;
+    background: $white;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+
+
+    .title{
+      font-weight:bold;
+      display: flex;
+      justify-content: center;
+      margin: 20px 0;
+      color: $white;
+      padding: 5px;
+      border-radius: 3px;
+      font-size: 24px;
+    }
+    .icon-check, .icon-remove{
+      display: none;
+    }
+
+
+    .field{
+      background: $white;
+      margin: 20px 0;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+    }
+    .zip{
+      text-align: center;
+      font-size: 14px;
+      width: 70px;
+      margin: 0 10px;
+      padding: 5px;
+    }
+  }
+
+
+  p{
+  border: 1px dotted $black;
+  font-size: 12px;
+  margin-top: 10px;
+  padding: 5px;
+  }
+
+}
