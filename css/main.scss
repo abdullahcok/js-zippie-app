@@ -1,5 +1,5 @@
 @import 'colors';
-@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap");
+@import 'mixins';
 
 
 *{
@@ -58,8 +58,7 @@ body{
 
     .title{
       font-weight:bold;
-      display: flex;
-      justify-content: center;
+      @include display();
       margin: 20px 0;
       color: $white;
       padding: 5px;
@@ -74,9 +73,8 @@ body{
     .field{
       background: $white;
       margin: 20px 0;
-      display: flex;
       text-align: center;
-      justify-content: center;
+      @include display();
     }
     .zip{
       text-align: center;
